@@ -342,19 +342,6 @@
   margin-inline: auto;
 }
 
-.form-panel::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  bottom: 8px;
-  left: 8px;
-  border: 2px solid var(--color-seafoam);
-  border-radius: var(--radius-lg);
-  z-index: -1;
-  opacity: 0.4;
-}
-
 .form-group {
   margin-bottom: var(--space-md);
 }
