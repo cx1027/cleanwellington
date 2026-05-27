@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CleanWellington serves Wellington CBD, Te Aro, Thorndon, Kelburn, Karori, Johnsonville, and more.">
+  <title>Service Areas — CleanWellington</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo">Clean<span>Wellington</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="regions.html" aria-current="page">Areas</a>
+        <a href="quote.html">Get a Quote</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header page-header--overlap">
+      <div class="container">
+        <p class="caption reveal">Wellington &amp; surrounds</p>
+        <h1 class="display reveal reveal-delay-1">Where we clean</h1>
+        <p class="lead reveal reveal-delay-2">Our crews work across the capital — from harbour-side apartments to hillside homes. If you are nearby, ask us; we often extend into adjacent suburbs.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container grid-asymmetric">
+        <div class="map-panel reveal-on-scroll">
+          <img src="wellington.png" alt="Wellington cityscape" style="width: 100%; border-radius: var(--radius-md);">
+        </div>
+
+        <div class="reveal-on-scroll">
+          <h2>Suburbs we regularly serve</h2>
+          <p class="lead" style="margin-bottom: var(--space-md);">Select your area when requesting a quote — travel is included for zones below.</p>
+          <div class="suburb-grid" id="suburb-list">
+            <span class="suburb-pill" data-suburb="cbd">Wellington CBD</span>
+            <span class="suburb-pill" data-suburb="te-aro">Te Aro</span>
+            <span class="suburb-pill" data-suburb="thorndon">Thorndon</span>
+            <span class="suburb-pill" data-suburb="kelburn">Kelburn</span>
+            <span class="suburb-pill" data-suburb="karori">Karori</span>
+            <span class="suburb-pill" data-suburb="johnsonville">Johnsonville</span>
+            <span class="suburb-pill" data-suburb="newtown">Newtown</span>
+            <span class="suburb-pill" data-suburb="island-bay">Island Bay</span>
+            <span class="suburb-pill" data-suburb="hataitai">Hataitai</span>
+            <span class="suburb-pill" data-suburb="lower-hutt">Lower Hutt*</span>
+          </div>
+          <p class="caption" style="margin-top: var(--space-md);">* Lower Hutt by arrangement — mention in your quote request.</p>
+          <a href="quote.html" class="btn btn--primary" style="margin-top: var(--space-lg);">Get a quote for your suburb</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">CleanWellington</p>
+          <p>Premium cleaning across Wellington City and surrounding suburbs.</p>
+        </div>
+        <div>
+          <p class="caption" style="color: var(--color-seafoam);">Navigate</p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="regions.html">Service areas</a></p>
+          <p><a href="quote.html">Get a quote</a></p>
+        </div>
+        <div>
+          <p class="caption" style="color: var(--color-seafoam);">Contact</p>
+          <p><a href="mailto:cleannz10@gmail.com">cleannz10@gmail.com</a></p>
+          <p><a href="contact.html">Hours &amp; details</a></p>
+        </div>
+      </div>
+      <p class="site-footer__bottom">&copy; <span id="year"></span> CleanWellington. Wellington, New Zealand.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll(".suburb-pill, .map-zone").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        const id = el.dataset.suburb;
+        document.querySelectorAll(`[data-suburb="${id}"]`).forEach((n) => n.classList.add("is-active"));
+      });
+      el.addEventListener("mouseleave", () => {
+        document.querySelectorAll(".is-active").forEach((n) => n.classList.remove("is-active"));
+      });
+    });
+  </script>
+</body>
+</html>

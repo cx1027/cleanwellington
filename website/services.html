@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Residential, deep clean, and office cleaning services in Wellington — CleanWellington.">
+  <title>Services — CleanWellington</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo">Clean<span>Wellington</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="regions.html">Areas</a>
+        <a href="quote.html">Get a Quote</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" data-booking class="btn btn--primary site-nav__cta">Book now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <p class="caption reveal">What we offer</p>
+        <h1 class="display reveal reveal-delay-1">Services shaped to your space</h1>
+        <p class="lead reveal reveal-delay-2">Every job starts with a conversation — scope, access, and the finish you expect. Pricing below is indicative; your quote reflects size and condition.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container bento">
+        <article id="residential" class="card card--featured reveal-on-scroll">
+          <img src="family.png" alt="Home cleaning service" class="card__image">
+          <span class="card__index" aria-hidden="true">01</span>
+          <h3>Home Cleaning</h3>
+          <p>Regular upkeep for busy households — kitchens, bathrooms, living areas, and the high-touch surfaces that matter daily.</p>
+          <ul>
+            <li>Weekly or fortnightly visits</li>
+            <li>Custom checklists on request</li>
+            <li>Key-safe and alarm-aware crews</li>
+          </ul>
+          <p class="card__price">From $95 per visit · 2-bed</p>
+        </article>
+
+        <article id="deep" class="card reveal-on-scroll">
+          <img src="deep.jpg" alt="Deep cleaning service" class="card__image">
+          <span class="card__index" aria-hidden="true">02</span>
+          <h3>Deep Clean</h3>
+          <p>Top-to-bottom refresh — inside appliances, skirting, window sills, and the areas routine cleans skip.</p>
+          <ul>
+            <li>Oven and rangehood detail</li>
+            <li>Bathroom grout attention</li>
+            <li>Ideal before events or seasons</li>
+          </ul>
+          <p class="card__price">From $220 · 2-bed</p>
+        </article>
+
+        <article id="office" class="card reveal-on-scroll">
+          <img src="office.jpg" alt="Office cleaning service" class="card__image">
+          <span class="card__index" aria-hidden="true">03</span>
+          <h3>Office &amp; Commercial</h3>
+          <p>After-hours or early-morning cleans for CBD desks, studios, and small retail — discreet and consistent.</p>
+          <ul>
+            <li>Desks, kitchens, washrooms</li>
+            <li>Waste and recycling handling</li>
+            <li>Scheduled outside your hours</li>
+          </ul>
+          <p class="card__price">From $120 · small office</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--teal">
+      <div class="container" style="text-align: center;">
+        <h2>Not sure which service fits?</h2>
+        <p class="lead" style="margin-inline: auto;">Tell us about your property — we will recommend the right scope and send a clear quote.</p>
+        <div class="btn-group" style="justify-content: center; margin-top: var(--space-lg);">
+          <a href="quote.html" class="btn btn--on-dark">Get a quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">CleanWellington</p>
+          <p>Premium cleaning across Wellington City and surrounding suburbs.</p>
+        </div>
+        <div>
+          <p class="caption" style="color: var(--color-seafoam);">Navigate</p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="regions.html">Service areas</a></p>
+          <p><a href="quote.html">Get a quote</a></p>
+        </div>
+        <div>
+          <p class="caption" style="color: var(--color-seafoam);">Contact</p>
+          <p><a href="mailto:cleannz10@gmail.com">cleannz10@gmail.com</a></p>
+          <p><a href="contact.html">Hours &amp; details</a></p>
+        </div>
+      </div>
+      <p class="site-footer__bottom">&copy; <span id="year"></span> CleanWellington. Wellington, New Zealand.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

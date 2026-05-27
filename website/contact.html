@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact CleanWellington — email, hours, and booking for Wellington cleaning services.">
+  <title>Contact — CleanWellington</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo">Clean<span>Wellington</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="regions.html">Areas</a>
+        <a href="quote.html">Get a Quote</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="#" data-booking class="btn btn--primary site-nav__cta">Book now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-split">
+      <div class="contact-panel contact-panel--teal reveal-on-scroll">
+        <p class="caption" style="color: var(--color-seafoam);">Get in touch</p>
+        <h1 class="display">We are here for Wellington</h1>
+        <p class="lead" style="margin-top: var(--space-md);">Questions, scheduling, or a quick chat about your property — reach us by email or book directly on Google Calendar.</p>
+        <p class="contact-email" style="margin-top: var(--space-lg);">
+          <a href="mailto:cleannz10@gmail.com">cleannz10@gmail.com</a>
+        </p>
+        <a href="#" data-booking class="btn btn--on-dark" style="margin-top: var(--space-lg); align-self: flex-start;">Book on Google Calendar</a>
+      </div>
+
+      <div class="contact-panel reveal-on-scroll" style="background: var(--color-sand);">
+        <h3>Hours</h3>
+        <dl class="hours-block">
+          <dt>Monday – Friday</dt>
+          <dd>8:00 am – 6:00 pm (cleans often start earlier)</dd>
+          <dt>Saturday</dt>
+          <dd>9:00 am – 2:00 pm</dd>
+          <dt>Sunday</dt>
+          <dd>By appointment</dd>
+        </dl>
+
+        <h3 style="margin-top: var(--space-xl);">Service area</h3>
+        <p>We cover Wellington City and nearby suburbs including CBD, Te Aro, Thorndon, Kelburn, Karori, Johnsonville, Newtown, and more.</p>
+        <p style="margin-top: var(--space-sm);"><a href="regions.html">View all service areas →</a></p>
+
+        <a href="quote.html" class="btn btn--secondary" style="margin-top: var(--space-lg); align-self: flex-start;">Request a quote instead</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">CleanWellington</p>
+          <p>Premium cleaning across Wellington City and surrounding suburbs.</p>
+        </div>
+        <div>
+          <p class="caption" style="color: var(--color-seafoam);">Navigate</p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="regions.html">Service areas</a></p>
+          <p><a href="quote.html">Get a quote</a></p>
+        </div>
+        <div>
+          <p class="caption" style="color: var(--color-seafoam);">Contact</p>
+          <p><a href="mailto:cleannz10@gmail.com">cleannz10@gmail.com</a></p>
+          <p><a href="contact.html">Hours &amp; details</a></p>
+        </div>
+      </div>
+      <p class="site-footer__bottom">&copy; <span id="year"></span> CleanWellington. Wellington, New Zealand.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

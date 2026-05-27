@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CleanWellington — premium home and office cleaning across Wellington, New Zealand. Book online or request a quote.">
+  <title>CleanWellington — Wellington Cleaning Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo">Clean<span>Wellington</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="regions.html">Areas</a>
+        <a href="quote.html">Get a Quote</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__media" style="background-image: url('home-image.png'); background-size: cover; background-position: center;">
+        <div class="hero__scrim" aria-hidden="true"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="hero__badge reveal">Wellington · Homes &amp; Offices</p>
+        <h1 class="display reveal reveal-delay-1">Harbour-fresh spaces, thoughtfully cleaned</h1>
+        <p class="lead reveal reveal-delay-2">Editorial care for Wellington homes and workplaces — reliable crews, eco-conscious products, and schedules that respect your rhythm.</p>
+        <div class="btn-group reveal reveal-delay-3">
+          <a href="quote.html" class="btn btn--seafoam">Get a quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section diagonal-top">
+      <div class="container">
+        <div class="preview-stack">
+          <article class="card reveal-on-scroll">
+            <h3>Home Cleaning</h3>
+            <p>Weekly or fortnightly upkeep tailored to your household — kitchens, bathrooms, and the details you notice first.</p>
+            <a href="services.html#residential" class="card__price">Explore residential →</a>
+          </article>
+          <article class="card reveal-on-scroll">
+            <h3>Deep clean</h3>
+            <p>Seasonal resets and pre-event refreshes — inside ovens, skirting boards, and every corner brought back to calm.</p>
+            <a href="services.html#deep" class="card__price">Explore deep clean →</a>
+          </article>
+          <article class="card reveal-on-scroll">
+            <h3>Office &amp; Commercial</h3>
+            <p>After-hours cleans for CBD desks, studios, and small retail — discreet and on schedule.</p>
+            <a href="services.html#office" class="card__price">Explore office cleans →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--teal section--lg">
+      <div class="container grid-asymmetric">
+        <div class="reveal-on-scroll">
+          <p class="caption" style="color: var(--color-seafoam);">Why Wellington trusts us</p>
+          <h2>Local crews who know your streets</h2>
+          <p class="lead">From Te Aro apartments to Karori family homes, we arrive prepared — insured, punctual, and aligned with how you actually live in your space.</p>
+        </div>
+        <div class="trust-strip reveal-on-scroll" style="border: none; flex-direction: column;">
+          <div class="trust-item">
+            <strong>Same-day</strong>
+            <span>quotes for most suburbs</span>
+          </div>
+          <div class="trust-item">
+            <strong>Eco-first</strong>
+            <span>products on request</span>
+          </div>
+          <div class="trust-item">
+            <strong>Flexible</strong>
+            <span>booking via Google Calendar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--lg">
+      <div class="container" style="text-align: center;">
+        <h2 class="reveal-on-scroll">Ready when you are</h2>
+        <p class="lead reveal-on-scroll" style="margin-inline: auto;">Book a time that suits you, or tell us about your space — we will respond with a clear, honest estimate.</p>
+        <div class="btn-group reveal-on-scroll" style="justify-content: center; margin-top: var(--space-lg);">
+          <a href="quote.html" class="btn btn--secondary">Request a quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__brand">CleanWellington</p>
+          <p>Premium cleaning across Wellington City and surrounding suburbs.</p>
+        </div>
+        <div>
+          <p class="caption" style="color: var(--color-seafoam);">Navigate</p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="regions.html">Service areas</a></p>
+          <p><a href="quote.html">Get a quote</a></p>
+        </div>
+        <div>
+          <p class="caption" style="color: var(--color-seafoam);">Contact</p>
+          <p><a href="mailto:cleannz10@gmail.com">cleannz10@gmail.com</a></p>
+          <p><a href="contact.html">Hours &amp; details</a></p>
+        </div>
+      </div>
+      <p class="site-footer__bottom">&copy; <span id="year"></span> CleanWellington. Wellington, New Zealand.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
